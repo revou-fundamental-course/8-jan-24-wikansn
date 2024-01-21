@@ -11,6 +11,10 @@ header,
   /* padding-bottom: 20px; */
 }
 
+.firstContainer .intro {
+  font-size: 14px;
+}
+
 header {
   background-color: skyblue;
   overflow: hidden;
