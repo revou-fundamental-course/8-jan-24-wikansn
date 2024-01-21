@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="firstContainer">
+      <header>
+        <h1 class="firstTitle">Kalkulator Luas dan Keliling Persegi</h1>
+      </header>
+      <h4 class="firstTitle">
+        Slamat Datang di Kalkulator Luas dan Keliling Persegi
+      </h4>
+      <p class="firstTitle">
+        Web ini digunakan untuk menghitung Luas dan Kliling Persegi
+      </p>
+      <div class="secondContainer">
+        <div class="tabsNav">
+          <ul class="tabs">
+            <li data-tab-target="#luas" class="active tab">Luas Persegi</li>
+            <li data-tab-target="#keliling" class="tab">Keliling Persegi</li>
+          </ul>
+        </div>
+
+        <div class="tabContent">
+          <div id="luas" data-tab-content class="active">
+            <img class="imagePersegi" src="img/persegi.jpg" alt="" />
+            <div>
+              <h4>Rumus luas Persegi</h4>
+              <h5 class="firstTitle">L = S x S</h5>
+              <p>Dimana</p>
+              <p>L = Luas</p>
+              <p>S = Sisi</p>
+            </div>
+            <div class="inputSection">
+              <label for="firstInput" id="lblInput">Hitung Luas Persegi</label>
+              <input
+                placeholder="masukkan angka di sini!"
+                class="btnInput"
+                type="number"
+                name=""
+                id="firstInput"
+              />
+            </div>
+            <div id="prosess">
+              <p id="rumus"><!-- L = S x S --></p>
+              <p id="rumusInput"><!-- L = 40 x 40 --></p>
+              <p id="hasil"><!-- L = 1600 --></p>
+            </div>
+            <div class="button">
+              <button class="btn" id="firstExecute">Hitung</button>
+              <button class="btn" type="reset" id="firstReset">Reset</button>
+            </div>
+          </div>
+          <div id="keliling" data-tab-content>
+            <img class="imagePersegi" src="img/persegi.jpg" alt="" />
+            <div>
+              <h4>Rumus Keliling Persegi</h4>
+              <h5 class="firstTitle">K = 4 x S</h5>
+              <p>Dimana</p>
+              <p>K = Keliling</p>
+              <p>S = Sisi</p>
+            </div>
+            <div class="inputSection">
+              <label for="secondInput" id="lblInput">Hitung Luas Persegi</label>
+              <input
+                placeholder="masukkan angka di sini!"
+                class="btnInput"
+                type="number"
+                name=""
+                id="secondInput"
+              />
+            </div>
+            <div id="prosess">
+              <p id="rumusKeliling"><!-- L = S x S --></p>
+              <p id="rumusInputKeliling"><!-- L = 40 x 40 --></p>
+              <p id="hasilKeliling"><!-- L = 1600 --></p>
+            </div>
+            <div class="button">
+              <button class="btn" id="secondExecute">Hitung</button>
+              <button class="btn" type="reset" id="secondReset">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer firstTitle">&#169; 21 Januari 2024</footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
