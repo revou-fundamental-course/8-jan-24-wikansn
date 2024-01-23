@@ -3,6 +3,7 @@ header,
 .firstContainer {
   margin: 0;
   padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .firstContainer {
@@ -91,9 +92,9 @@ img {
   display: block;
 }
 
-.tabsNav {
+/* .tabsNav {
   height: 40px;
-}
+} */
 
 .tabs {
   display: flex;
@@ -102,19 +103,48 @@ img {
   margin: 0;
   padding: 0;
   border-bottom: 1px solid gray;
-  float: left;
+  /* float: left; */
+}
+
+@media (min-width: 701px) {
+  .tabsNav {
+    height: 40px;
+  }
+
+  .tabs {
+    float: left;
+  }
+
+  .tab {
+    width: 130px;
+  }
+}
+
+@media (max-width: 700px) {
+  .tabs {
+    flex-direction: column;
+    float: none;
+  }
+  .tabsNav {
+    height: 80px;
+  }
 }
 
 .tab {
   cursor: pointer;
   padding: 10px;
+  /* width: 130px; */
 }
 .tab.active {
   background-color: #ccc;
+  font-weight: bold;
+  color: black;
 }
 
 .tab:hover {
   background-color: #aaa;
+  /* color: skyblue; */
+  font-weight: bold;
 }
 
 .tabContent {
