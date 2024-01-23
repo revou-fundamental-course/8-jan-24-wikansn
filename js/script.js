@@ -18,12 +18,34 @@ tabs.forEach((tab) => {
   });
 });
 
+const isNumeric = (value) => {
+  return /^-?\d+$/.test(value);
+};
+
+// document.getElementById("firstInput").addEventListener("keypress", (event) => {
+//   console.log(event.key);
+//   if (isNumeric(event.key)) {
+//     console.log("Numeric bisa di pake");
+//   }
+// });
+
 document.getElementById("firstExecute").addEventListener("click", function () {
   const inputVlue = document.getElementById("firstInput").value;
-  let intConvert = parseInt(inputVlue);
-  let luasLinkaran = intConvert * intConvert;
+  let numConvert = parseFloat(inputVlue);
+  let luasLinkaran = numConvert * numConvert;
+  let pattern = "-";
 
+  // if (inputVlue.match(/^\d+\.\d+$/)) {
+  //   console.log("is Numeric");
+  // }
+  // if (!isNaN(inputVlue)) {
+  //   console.log("is Number");
+  // }
+  // if (typeof inputVlue == "number") {
+  // }
+  // console.log(typeof numConvert);
   if (inputVlue == "") {
+  } else if (inputVlue.match(pattern)) {
   } else {
     document.getElementById("rumus").innerHTML = "L = S x S ";
     document.getElementById("rumusInput").innerHTML =
@@ -45,8 +67,8 @@ document.getElementById("firstReset").addEventListener("click", () => {
 // Keliling lingkaran
 document.getElementById("secondExecute").addEventListener("click", function () {
   const inputVlue = document.getElementById("secondInput").value;
-  let intConvert = parseInt(inputVlue);
-  let KelilingLinkaran = 4 * intConvert;
+  let numConvert = parseFloat(inputVlue);
+  let KelilingLinkaran = 4 * numConvert;
 
   if (inputVlue == "") {
   } else {
